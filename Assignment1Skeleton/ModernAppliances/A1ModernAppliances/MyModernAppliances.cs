@@ -50,15 +50,16 @@ namespace ModernAppliances
         public override void Find()
         {
             // Write "Enter brand to search for:"
-
+            Console.WriteLine("Enter brand to search for:");
             // Create string variable to hold entered brand
+            string brand;
             // Get user input as string and assign to variable.
-
+            brand = Console.ReadLine();
             // Create list to hold found Appliance objects
-
+            //List<Appliace> matchingAppliances = new List<Appliace>();
             // Iterate through loaded appliances
-                // Test current appliance brand matches what user entered
-                    // Add current appliance in list to found list
+            // Test current appliance brand matches what user entered
+            // Add current appliance in list to found list
 
 
             // Display found appliances
@@ -71,7 +72,7 @@ namespace ModernAppliances
         public override void DisplayRefrigerators()
         {
             // Write "Possible options:"
-
+            
             // Write "0 - Any"
             // Write "2 - Double doors"
             // Write "3 - Three doors"
@@ -259,41 +260,79 @@ namespace ModernAppliances
         public override void RandomList()
         {
             // Write "Appliance Types"
-
+            Console.WriteLine("Appliance Types");
             // Write "0 - Any"
             // Write "1 – Refrigerators"
             // Write "2 – Vacuums"
             // Write "3 – Microwaves"
             // Write "4 – Dishwashers"
-
+            Console.WriteLine("0 - Any\n1 - Refrigerators\n2 - Vacuums\n3 - Microwaves\n4 - Dishwashers");
             // Write "Enter type of appliance:"
-
+            Console.WriteLine("Enter type of appliance:");
             // Get user input as string and assign to appliance type variable
-
+            string applianceType = Console.ReadLine();
             // Write "Enter number of appliances: "
-
+            Console.WriteLine("Enter number of appliances:");
             // Get user input as string and assign to variable
-
+            string numberInput = Console.ReadLine();
             // Convert user input from string to int
-
+            int numberOfAppliances = Convert.ToInt32(numberInput);
             // Create variable to hold list of found appliances
-
+            List<Appliace> foundAppliances = new List<Appliace>();
             // Loop through appliances
-                // Test inputted appliance type is "0"
-                    // Add current appliance in list to found list
-                // Test inputted appliance type is "1"
-                    // Test current appliance type is Refrigerator
+            foreach (Appliance app in existingAppliances) //list name is placeholder
+            {
+                switch (applianceType)
+                {
+                    // Test inputted appliance type is "0"
+                    case "0":
                         // Add current appliance in list to found list
-                // Test inputted appliance type is "2"
-                    // Test current appliance type is Vacuum
-                        // Add current appliance in list to found list
-                // Test inputted appliance type is "3"
-                    // Test current appliance type is Microwave
-                        // Add current appliance in list to found list
-                // Test inputted appliance type is "4"
-                    // Test current appliance type is Dishwasher
-                        // Add current appliance in list to found list
+                        foundAppliances.Add(app);
+                        break;
 
+                    // Test inputted appliance type is "1"
+                    case "1":
+                        // Test current appliance type is Refrigerator
+                        if (app is Refrigerator)
+                        {
+                            // Add current appliance in list to found list
+                            foundAppliances.Add(app); //will fix later
+                        }
+                        break;
+
+                    // Test inputted appliance type is "2"
+                    case "2":
+                        // Test current appliance type is Vacuum
+                        if (app is Vacuum)
+                        {
+                            // Add current appliance in list to found list
+                            foundAppliances.Add(app);
+                        }
+                        break;
+
+                    // Test inputted appliance type is "3"
+                    case "3":
+                        // Test current appliance type is Microwave
+                        if (app is Microwave)
+                        {
+                            // Add current appliance in list to found list
+                            foundAppliances.Add(app);
+                        }
+                        break;
+
+                    // Test inputted appliance type is "4"
+                    case "4":
+                        // Test current appliance type is Dishwasher
+                        if (app is Dishwasher)
+                        {
+                            // Add current appliance in list to found list
+                            foundAppliances.Add(app);
+                        }
+                        break;   
+                }
+            }
+
+            
             // Randomize list of found appliances
             // found.Sort(new RandomComparer());
 

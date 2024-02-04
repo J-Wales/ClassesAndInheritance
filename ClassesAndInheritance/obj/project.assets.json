@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wales\\OneDrive\\Documents\\Visual Studio 2022\\Object-Oriented Programming 2\\ClassesAndInheritance\\ClassesAndInheritance\\ClassesAndInheritance.csproj",
+      "projectUniqueName": "C:\\Users\\wales\\source\\repos\\ClassesAndInheritance\\ClassesAndInheritance\\ClassesAndInheritance.csproj",
       "projectName": "ClassesAndInheritance",
-      "projectPath": "C:\\Users\\wales\\OneDrive\\Documents\\Visual Studio 2022\\Object-Oriented Programming 2\\ClassesAndInheritance\\ClassesAndInheritance\\ClassesAndInheritance.csproj",
+      "projectPath": "C:\\Users\\wales\\source\\repos\\ClassesAndInheritance\\ClassesAndInheritance\\ClassesAndInheritance.csproj",
       "packagesPath": "C:\\Users\\wales\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wales\\OneDrive\\Documents\\Visual Studio 2022\\Object-Oriented Programming 2\\ClassesAndInheritance\\ClassesAndInheritance\\obj\\",
+      "outputPath": "C:\\Users\\wales\\source\\repos\\ClassesAndInheritance\\ClassesAndInheritance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
