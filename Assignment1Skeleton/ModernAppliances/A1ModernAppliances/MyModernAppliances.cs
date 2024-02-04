@@ -131,7 +131,6 @@ namespace ModernAppliances
                 // Return to calling (previous) method
                 // return;
 
-            // Write "Possible options:"
 
             // Write "0 - Any"
             // Write "1 - 18 Volt"
