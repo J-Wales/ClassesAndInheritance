@@ -14,36 +14,56 @@ namespace ModernAppliances
         /// <summary>
         /// Option 1: Performs a checkout
         /// </summary>
-        public override void Checkout()
-        {
-            // Write "Enter the item number of an appliance: "
+            public override void Checkout()
+  {
+      // Prompt the user to enter the item number of an appliance
+      Console.WriteLine("Enter the item number of an appliance: ");
+      // Create a variable to hold the item number
+      long itemNum;
+      // Get the user's input as a string
+      string userIn = Console.ReadLine();
+      // Convert the user's input from a string to a long integer
+      itemNum = long.Parse(userIn);
+      // Create a variable to hold the found appliance
+      List<Appliance> foundAppliance = new List<Appliance>();
+      // Loop through the list of appliances
+      foreach (Appliance app in Appliances)
+      {
+          // Test if the appliance's item number matches the entered item number
+          if (app.ItemNumber == itemNum)
+          {
+              // Assign the appliance to the foundAppliance variable
+              foundAppliance.Add(app);
+              // Break out of the loop
+              break;
+          }
+      }
+      // Test if no appliance was found
+      if (foundAppliance.Count == 0)
+      {
+          // Write a message indicating that no appliances were found
+          Console.WriteLine("No appliances found with that item number.");
+      }
+      else
+      {
+          // Get the first appliance from the foundAppliance list (since there should only be one)
+          Appliance applianceToCheckout = foundAppliance[0];
+          // Test if the appliance is available
+          if (applianceToCheckout.IsAvailable == true)
+          {
+              // Check out the appliance
+              applianceToCheckout.Checkout();
 
-            // Create long variable to hold item number
-
-            // Get user input as string and assign to variable.
-            // Convert user input from string to long and store as item number variable.
-
-            // Create 'foundAppliance' variable to hold appliance with item number
-            // Assign null to foundAppliance (foundAppliance may need to be set as nullable)
-
-            // Loop through Appliances
-                // Test appliance item number equals entered item number
-                    // Assign appliance in list to foundAppliance variable
-
-                    // Break out of loop (since we found what need to)
-
-            // Test appliance was not found (foundAppliance is null)
-                // Write "No appliances found with that item number."
-
-            // Otherwise (appliance was found)
-                // Test found appliance is available
-                    // Checkout found appliance
-
-                    // Write "Appliance has been checked out."
-                // Otherwise (appliance isn't available)
-                    // Write "The appliance is not available to be checked out."
-        }
-
+              // Write a message indicating that the appliance has been checked out
+              Console.WriteLine("Appliance \"" + applianceToCheckout.ItemNumber.ToString() + "\" has been checked out.");
+          }
+          else
+          {
+              // Write a message indicating that the appliance is not available
+              Console.WriteLine("The appliance is not available to be checked out.");
+          }
+      }
+  }
         /// <summary>
         /// Option 2: Finds appliances
         /// </summary>
