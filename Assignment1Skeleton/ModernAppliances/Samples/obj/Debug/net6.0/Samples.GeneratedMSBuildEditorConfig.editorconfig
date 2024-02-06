@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Samples
-build_property.ProjectDir = C:\Users\wales\Source\Repos\ClassesAndInheritance\Assignment1Skeleton\ModernAppliances\Samples\
+build_property.ProjectDir = C:\Users\wales\source\repos\ClassesAndInheritance\Assignment1Skeleton\ModernAppliances\Samples\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

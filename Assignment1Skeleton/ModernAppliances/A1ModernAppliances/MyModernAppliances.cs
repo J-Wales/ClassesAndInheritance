@@ -61,10 +61,10 @@ namespace ModernAppliances
             // Iterate through loaded appliances
             foreach (Appliance app in Appliances) //Placeholder name
             {
-            // Test current appliance brand matches what user entered
+                // Test current appliance brand matches what user entered
                 if (app.Brand.Contains(brand))
                 {
-            // Add current appliance in list to found list
+                    // Add current appliance in list to found list
                     found.Add(app);
                 }
             }
@@ -132,35 +132,35 @@ namespace ModernAppliances
             Console.WriteLine("Enter grade:");
             // Get user input as string and assign to variable
             string userInput = Console.ReadLine();
-
+            
             // Create grade variable to hold grade to find (Any, Residential, or Commercial)
             string grade;
 
             switch (userInput)
             {
-            // Test input is "0"
+                // Test input is "0"
                 case "0":
-                // Assign "Any" to grade
+                    // Assign "Any" to grade
                     grade = "Any";
                     break;
 
-            // Test input is "1"
+                // Test input is "1"
                 case "1":
-                // Assign "Residential" to grade
+                    // Assign "Residential" to grade
                     grade = "Residential";
                     break;
 
-            // Test input is "2"
+                // Test input is "2"
                 case "2":
-                // Assign "Commercial" to grade
+                    // Assign "Commercial" to grade
                     grade = "Commercial";
                     break;
 
-            // Otherwise (input is something else)
+                // Otherwise (input is something else)
                 default:
-                // Write "Invalid option."
+                    // Write "Invalid option."
                     Console.WriteLine("Invalid option.");
-                // Return to calling (previous) method
+                    // Return to calling (previous) method
                     return;
             }
 
@@ -180,29 +180,29 @@ namespace ModernAppliances
 
             switch (userInput)
             {
-            // Test input is "0"
+                // Test input is "0"
                 case "0":
-                // Assign 0 to voltage
+                    // Assign 0 to voltage
                     voltage = 0;
                     break;
 
-            // Test input is "1"
+                // Test input is "1"
                 case "1":
-                // Assign 18 to voltage
+                    // Assign 18 to voltage
                     voltage = 18;
                     break;
 
-            // Test input is "2"
+                // Test input is "2"
                 case "2":
-                // Assign 24 to voltage
+                    // Assign 24 to voltage
                     voltage = 24;
                     break;
 
-            // Otherwise
+                // Otherwise
                 default:
-                // Write "Invalid option."
+                    // Write "Invalid option."
                     Console.WriteLine("Invalid option.");
-                // Return to calling (previous) method
+                    // Return to calling (previous) method
                     return;
             }
 
@@ -251,29 +251,29 @@ namespace ModernAppliances
 
             switch (userInput)
             {
-            // Test input is "0"
+                // Test input is "0"
                 case "0":
-                // Assign 'A' to room type variable
+                    // Assign 'A' to room type variable
                     roomType = 'A';
                     break;
 
-            // Test input is "1"
+                // Test input is "1"
                 case "1":
-                // Assign 'K' to room type variable
+                    // Assign 'K' to room type variable
                     roomType = 'K';
                     break;
 
-            // Test input is "2"
+                // Test input is "2"
                 case "2":
-                // Assign 'W' to room type variable
+                    // Assign 'W' to room type variable
                     roomType = 'W';
                     break;
 
-            // Otherwise (input is something else)
+                // Otherwise (input is something else)
                 default:
-                // Write "Invalid option."
+                    // Write "Invalid option."
                     Console.WriteLine("Invalid option.");
-                // Return to calling method
+                    // Return to calling method
                     return;
             }
 
@@ -324,41 +324,41 @@ namespace ModernAppliances
 
             switch (userInput)
             {
-            // Test input is "0"
+                // Test input is "0"
                 case "0":
-                // Assign "Any" to sound rating variable
+                    // Assign "Any" to sound rating variable
                     sound = "Any";
                     break;
 
-            // Test input is "1"
+                // Test input is "1"
                 case "1":
-                // Assign "Qt" to sound rating variable
+                    // Assign "Qt" to sound rating variable
                     sound = "Qt";
                     break;
 
-            // Test input is "2"
+                // Test input is "2"
                 case "2":
-                // Assign "Qr" to sound rating variable
+                    // Assign "Qr" to sound rating variable
                     sound = "Qr";
                     break;
 
-            // Test input is "3"
+                // Test input is "3"
                 case "3":
-                // Assign "Qu" to sound rating variable
+                    // Assign "Qu" to sound rating variable
                     sound = "Qu";
                     break;
 
-            // Test input is "4"
+                // Test input is "4"
                 case "4":
-                // Assign "M" to sound rating variable
+                    // Assign "M" to sound rating variable
                     sound = "M";
                     break;
 
-            // Otherwise (input is something else)
+                // Otherwise (input is something else)
                 default:
-                // Write "Invalid option."
+                    // Write "Invalid option."
                     Console.WriteLine("Invalid option.");
-                // Return to calling method
+                    // Return to calling method
                     return;
             }
 

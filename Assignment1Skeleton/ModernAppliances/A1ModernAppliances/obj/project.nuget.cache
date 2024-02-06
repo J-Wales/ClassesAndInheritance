@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2FXeKk/0CBY7GRAiVNVMRTCmrHpxi2sAVLTWvaPqlbvVUkOcMHIXXgUtCZ/3XAH7q1HYQM4TvxpmRIsuSijCbw==",
+  "dgSpecHash": "+2i7pr9vxPPi/6tKgqOs9Y52ow0hw5HtmTdlMR7TmZ6kA+X0f/b+0ZdyPOXfKNNJBm1tE2wXWIN1ChuHKxqCyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wales\\Source\\Repos\\ClassesAndInheritance\\Assignment1Skeleton\\ModernAppliances\\A1ModernAppliances\\ModernAppliances.csproj",
+  "projectFilePath": "C:\\Users\\wales\\source\\repos\\ClassesAndInheritance\\Assignment1Skeleton\\ModernAppliances\\A1ModernAppliances\\ModernAppliances.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wales\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\wales\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\wales\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\wales\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+    "C:\\Users\\wales\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\wales\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\wales\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\wales\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
