@@ -145,55 +145,13 @@ namespace ModernAppliances
             // Write "Possible options:"
             Console.WriteLine("Possible options:");
             // Write "0 - Any"
-            // Write "1 - Residential"
-            // Write "2 - Commercial"
-            Console.WriteLine("0 - Any\n1 - Residential\n2 - Commercial");
-            // Write "Enter grade:"
-            Console.WriteLine("Enter grade:");
-            // Get user input as string and assign to variable
-            string userInput = Console.ReadLine();
-            
-            // Create grade variable to hold grade to find (Any, Residential, or Commercial)
-            string grade;
-
-            switch (userInput)
-            {
-                // Test input is "0"
-                case "0":
-                    // Assign "Any" to grade
-                    grade = "Any";
-                    break;
-
-                // Test input is "1"
-                case "1":
-                    // Assign "Residential" to grade
-                    grade = "Residential";
-                    break;
-
-                // Test input is "2"
-                case "2":
-                    // Assign "Commercial" to grade
-                    grade = "Commercial";
-                    break;
-
-                // Otherwise (input is something else)
-                default:
-                    // Write "Invalid option."
-                    Console.WriteLine("Invalid option.");
-                    // Return to calling (previous) method
-                    return;
-            }
-
-            // Write "Possible options:"
-            Console.WriteLine("Possible options:");
-            // Write "0 - Any"
             // Write "1 - 18 Volt"
             // Write "2 - 24 Volt"
             Console.WriteLine("0 - Any\n1 - 18 Volt\n2 - 24 Volt");
             // Write "Enter voltage:"
             Console.WriteLine("Enter voltage:");
             // Get user input as string
-            userInput = Console.ReadLine();
+            string userInput = Console.ReadLine();
 
             // Create variable to hold voltage
             int voltage;
@@ -239,7 +197,7 @@ namespace ModernAppliances
                     Vacuum vacuum = (Vacuum)app;
 
                     // Test grade is "Any" or grade is equal to current vacuum grade and voltage is 0 or voltage is equal to current vacuum voltage
-                    if ((grade == "Any" | grade == vacuum.Grade) && (voltage == 0 | voltage == vacuum.BatteryVoltage))
+                    if (voltage == 0 | voltage == vacuum.BatteryVoltage)
                     {
                         // Add current appliance in list to found list
                         found.Add(vacuum);
