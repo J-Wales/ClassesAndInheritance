@@ -97,15 +97,7 @@ namespace ModernAppliances
         /// </summary>
         public override void DisplayRefrigerators()
         {
-            // Write "Possible options:"
-            Console.WriteLine("Possible options:");
-            // Write "0 - Any"
-            // Write "2 - Double doors"
-            // Write "3 - Three doors"
-            // Write "4 - Four doors"
-            Console.WriteLine("0 - Any\n2 - Double doors\n3 - Three doors\n4 - Four doors");
-            // Write "Enter number of doors: "
-            Console.WriteLine("Enter number of doors:");
+            Console.WriteLine("Enter number of doors: 2 (double door, 3 (three doors) or 4 (four doors)");
             // Create variable to hold entered number of doors
             // Get user input as string and assign to variable
             // Convert user input from string to int and store as number of doors variable.
@@ -142,16 +134,12 @@ namespace ModernAppliances
         /// <param name="voltage">Vacuum voltage (or 0 for any voltage)</param>
         public override void DisplayVacuums()
         {
-            // Write "Possible options:"
-            Console.WriteLine("Possible options:");
-            // Write "0 - Any"
-            // Write "1 - 18 Volt"
-            // Write "2 - 24 Volt"
-            Console.WriteLine("0 - Any\n1 - 18 Volt\n2 - 24 Volt");
             // Write "Enter voltage:"
-            Console.WriteLine("Enter voltage:");
+            Console.WriteLine("Enter battery voltage value. 18 V (low) or 24 V (high)");
+
+            // Code written to match instructions in file: 
             // Get user input as string
-            string userInput = Console.ReadLine();
+            /*string userInput = Console.ReadLine();
 
             // Create variable to hold voltage
             int voltage;
@@ -182,6 +170,20 @@ namespace ModernAppliances
                     Console.WriteLine("Invalid option.");
                     // Return to calling (previous) method
                     return;
+            } */
+
+            // Code written to match sample output:
+
+            // Get user input for voltage
+            int voltage = Convert.ToInt32(Console.ReadLine());
+
+            // If input is not a valid option (18 or 2
+            if (voltage != 18 && voltage != 24)
+            {
+                // Write "Invalid option."
+                Console.WriteLine("Invalid option.");
+                // Return to calling (previous) method
+                return;
             }
 
             // Create found variable to hold list of found appliances.
