@@ -215,6 +215,8 @@ namespace ModernAppliances
         /// </summary>
         public override void DisplayMicrowaves()
         {
+            // Code written to match instructions in file: 
+            /*
             // Write "Possible options:"
             Console.WriteLine("Possible options:");
             // Write "0 - Any"
@@ -256,7 +258,23 @@ namespace ModernAppliances
                     // Return to calling method
                     return;
             }
+            */
 
+            // Code written to align with provided sample output
+            // Display options.
+            Console.WriteLine("Room where the microwave will be installed: K (kitchen) or W (work site):");
+
+            // Get user input as char
+            char roomType = Convert.ToChar(Console.ReadLine());
+
+            // Check if inputted room type is invalid.
+            if (roomType != 'K' && roomType != 'W')
+            {
+                // Write "Invalid option."
+                Console.WriteLine("Invalid option.");
+                // Return to calling method
+                return;
+            }
             // Create variable that holds list of 'found' appliances
             List<Appliance> found = new List<Appliance>();
 
@@ -286,6 +304,8 @@ namespace ModernAppliances
         /// </summary>
         public override void DisplayDishwashers()
         {
+            // Code written to match instructions in file: 
+            /*
             // Write "Possible options:"
             Console.WriteLine("Possible options:");
             // Write "0 - Any"
@@ -340,6 +360,23 @@ namespace ModernAppliances
                     Console.WriteLine("Invalid option.");
                     // Return to calling method
                     return;
+            }
+            */
+
+            // Code written to align with provided sample output
+            // Display options
+            Console.WriteLine("Wnter the sound rating of the dishwasher: Qt (quietest), Qr (Quieter), Qu (Quiet) or M (Moderate):");
+            // Get user input as string
+            string sound = Console.ReadLine();
+
+            // Put valid options in array to make it easier to check if a valid option was selected
+            string[] sounds = { "Qt", "Qr", "Qu", "M" };
+            if (sounds.Contains(sound) == false)
+            {
+                // Write "Invalid option."
+                Console.WriteLine("Invalid option.");
+                // Return to calling method
+                return;
             }
 
             // Create variable that holds list of found appliances
