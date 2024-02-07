@@ -408,6 +408,8 @@ namespace ModernAppliances
         /// </summary>
         public override void RandomList()
         {
+            // Code written to match instructions in file: 
+            /*
             // Write "Appliance Types"
             Console.WriteLine("Appliance Types");
             // Write "0 - Any"
@@ -431,7 +433,7 @@ namespace ModernAppliances
             List<Appliance> found = new List<Appliance>();
 
             // Loop through appliances
-            foreach (Appliance app in Appliances) //list name is placeholder
+            foreach (Appliance app in Appliances)
             {
                 switch (applianceType)
                 {
@@ -447,7 +449,7 @@ namespace ModernAppliances
                         if (app is Refrigerator)
                         {
                             // Add current appliance in list to found list
-                            found.Add(app); //will fix later
+                            found.Add(app);
                         }
                         break;
 
@@ -482,6 +484,25 @@ namespace ModernAppliances
                         break;   
                 }
             }
+            */
+
+            // Code written to match sample output
+
+            // Write "Enter number of appliances: "
+            Console.WriteLine("Enter number of appliances:");
+            // Get user input as string and assign to variable
+            // Convert user input from string to int
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            // Create variable to hold list of found appliances
+            List<Appliance> found = new List<Appliance>();
+
+            // Add the appliances to a found list so they they can be randomly resorted without it affecting the original list of appliances
+            foreach (Appliance app in Appliances)
+            {
+                found.Add(app);
+            }
+
             // Randomize list of found appliances
             found.Sort(new RandomComparer());
 
